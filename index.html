@@ -17,6 +17,48 @@
         <button class="button js-open-modal"> Форма</button>
     </header>
     <main>  
+        
+    <div class="modal">
+        <form id="form">
+            <p>Имя профиля</p>
+            <input class="pole" id="profile" type="text" name="name" required>
+           
+            <fieldset >
+                <legend>Версия</legend>
+            <label> <input type="radio" name="version" value="v2">
+            v2</label>
+            <label> <input type="radio" name="version" value="v4">
+            v4</label>
+            <label> <input type="radio" name="version" value="max">
+            max</label>
+           </fieldset>
+
+
+           <p>Количество измеренных образцов</p>
+            <input class="pole" id="sample" type="number" min ="0" name="sample" required>
+
+            
+
+            <fieldset class="adapt">
+                <legend>Адаптации включены</legend>
+                <label> <input type="radio" name="bool" value="true">
+                    Да</label>
+                <label> <input type="radio" name="bool" value="false">
+                    Нет</label>
+            </fieldset>
+
+
+            <p><button class="button2 js-modal-close">Отмена</button></p>
+            <p><input class="button2 push" type="submit" id="sub"></p>
+
+
+            
+        </form>
+    </div>
+
+    <div class="overlay overlay-modal"></div>
+    <script src="js.js"> </script>
+
     </main>
   <footer>
 
